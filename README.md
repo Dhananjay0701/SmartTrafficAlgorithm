@@ -52,7 +52,7 @@ Now we have to decide time period for which a pattern gets switched to green. We
 - Average worst waiting time for a lane. Eg, if we decide avg worst waiting time to be 90 secs, max number pattern for 1 node = 3, therefore number of remaining patterns left = 9. Avg worst waiting time can be divided into these pattern, applying pipelining concept, signal can be green for 8 secs followed by 2 secs for yellow light.
 
 
-### Performance comparison ###
+## Performance comparison ##
 
 In order to compare performance to traditional traffic system, similar algorithm was made for traditional system to calculate time taken to empty out the junction. We observe that, 
 
