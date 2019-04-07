@@ -21,6 +21,7 @@ This Algorithm with conjunction with Computer Vision software like YOLOv3, detec
 
 Switching algorithm is based around **graph theory** and **pipeling concepts**. To understand algorithm, working is divided into many sub units, which are as follows
 
+
 ### Graph ###
 
 We can think of the junction as a graph, where we only represent outgoing lanes and lanes which can switched green simultaneously are connected. Left lane can be excluded as it can independently switched green or red.
@@ -28,6 +29,7 @@ We can think of the junction as a graph, where we only represent outgoing lanes 
 <p align="center"> 
 <img src="https://github.com/rahools/SmartTrafficAlgorithm/blob/master/img/graphEdit.jpg">
 </p>
+
 
 ### Properties of graph ###
 
@@ -41,9 +43,21 @@ We can think of the junction as a graph, where we only represent outgoing lanes 
 
 Node with max weight is selected to be switched green and pattern is chosen by selecting edge connected to selected node with max weight. This pattern is then switched green for a fixed time period, light can be switched back to red earlier if car in lane exhausts. This process is repeated forever in order to route the traffic. To avoid the scenario where a pattern is repeatedly switched green again and again, a pattern can only be switched once per loop.
 
+
 ### Switching Time ###
 
 Now we have to decide time period for which a pattern gets switched to green. We can decide this by following ways,
 
 - Max number of cars that can cross in a pattern. Eg, if we decide number of cars to be 8, then by pipelining concept we know that signal has to be green for 8 secs followed by at least 2 secs for yellow light.
 - Average worst waiting time for a lane. Eg, if we decide avg worst waiting time to be 90 secs, max number pattern for 1 node = 3, therefore number of remaining patterns left = 9. Avg worst waiting time can be divided into these pattern, applying pipelining concept, signal can be green for 8 secs followed by 2 secs for yellow light.
+
+
+### Performance comparison ###
+
+In order to compare performance to traditional traffic system, similar algorithm was made for traditional system to calculate time taken to empty out the junction. We observe that, 
+
+- In low traffic scenario, SMART takes 65 secs while traditional system takes 132 secs
+- In high traffic scenario, SMART takes 212 secs while traditional system takes 264 secs
+
+As we observe, as traffic increases, performance of SMART comes near traditional traffic system.
+
