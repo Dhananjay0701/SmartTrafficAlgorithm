@@ -61,3 +61,8 @@ In order to compare performance to traditional traffic system, similar algorithm
 
 As we observe, as traffic increases, performance of SMART comes near traditional traffic system.
 
+<p align="center"> 
+<img src="https://github.com/rahools/SmartTrafficAlgorithm/blob/master/img/Screenshot_2019-04-07%20SMART%20Stats%20pdf.png">
+</p>
+
+
