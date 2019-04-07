@@ -11,7 +11,7 @@ This Algorithm with conjunction with Computer Vision software like YOLOv3, detec
 - Max amount of time taken by a car to cross the junction is 3 secs.
 - No pedestrian lane for the time being.
 - Car moves in pipelined manner, time interval being 1 sec.
-![Pipeline](https://drive.google.com/file/d/1nvXIFijaYIleTv4JRLCwza-_qcAaAy89/view?usp=sharing)
+![Pipeline](https://github.com/rahools/SmartTrafficAlgorithm/blob/master/img/pipelineEdit.jpg)
 
  
 ## Working ##
@@ -21,7 +21,7 @@ Switching algorithm is based around **graph theory** and **pipeling concepts**. 
 ### Graph ###
 
 We can think of the junction as a graph, where we only represent outgoing lanes and lanes which can switched green simultaneously are connected. Left lane can be excluded as it can independently switched green or red.
-![Graph](https://drive.google.com/file/d/188UacARtSaS0nBDAR3ku7_vfurX7rHnc/view?usp=sharing)
+![Graph](https://github.com/rahools/SmartTrafficAlgorithm/blob/master/img/graphEdit.jpg)
 
 ### Properties of graph ###
 
