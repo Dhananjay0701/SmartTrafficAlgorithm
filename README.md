@@ -6,7 +6,7 @@ This Algorithm with conjunction with Computer Vision software like YOLOv3, detec
 
 ## Assumptions ##
 
-- At Least 3 outgoing lanes with 1 left lane, 1 center lane and, 1 right lane.
+- At Least 3 outgoing lanes with 1 left lane, 1 center lane, and 1 right lane.
 - Ideal scenario where car which remains in the lane corresponding to where they want to go. Eg, cars which want to go right remains in right lane.
 - Max amount of time taken by a car to cross the junction is 3 secs.
 - No pedestrian lane for the time being.
